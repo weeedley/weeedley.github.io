@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>HUNGER — weeedleyhacks</title>
+  <meta name="description" content="Browse through free and premium HUNGER products" />
+  <link rel="canonical" href="https://weeedleyhacks.com/hunger.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="weeedleyhacks.com" />
+  <meta property="og:title" content="HUNGER — weeedleyhacks" />
+  <meta property="og:description" content="Browse through free and premium HUNGER products" />
+  <meta property="og:url" content="https://weeedleyhacks.com/hunger.html" />
+  <meta property="og:image" content="https://weeedleyhacks.com/assets/images/icons/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    html, body { background-color: #070707; }
+
+    @font-face {
+      font-family: "Caligra MN";
+      src: url("assets/fonts/Caligra%20MN.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body.game-hunger {
+      font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    }
+
+    body.game-hunger .hero-title,
+    body.game-hunger .section-title,
+    body.game-hunger .product-title {
+      font-family: "Caligra MN", Georgia, serif;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+    }
+
+    body.game-hunger .hero-title {
+      letter-spacing: 0.12em;
+    }
+  </style>
+
+
+  <link rel="preload" href="assets/fonts/Caligra%20MN.ttf" as="font" type="font/ttf" crossorigin />
+
+  <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="game-hunger">
+
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="assets/images/icons/weeedley_logo1.png" alt="Weeedley Logo" class="nav-logo" />
+        <a href="/" class="logo">weeedleyhacks.com</a>
+      </div>
+
+      <div class="nav-center" aria-label="Game shortcuts">
+        <a class="nav-shortcut nav-shortcut-hunt" href="hunt.html">HUNT</a>
+        <a class="nav-shortcut nav-shortcut-arc" href="arc.html">ARC</a>
+        <a class="nav-shortcut nav-shortcut-pubg" href="pubg.html">PUBG</a>
+        <a class="nav-shortcut nav-shortcut-bf6" href="bf6.html">BF6</a>
+        <a class="nav-shortcut nav-shortcut-wardogs" href="wardogs.html">WARDOGS</a>
+        <a class="nav-shortcut nav-shortcut-hunger is-active" href="hunger.html" aria-current="page">HUNGER</a>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#" id="compatibilityCheck">Check system compatibility</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <video id="hunger-fog-video" autoplay loop muted playsinline preload="auto" aria-hidden="true">
+    <source src="assets/videos/fog.mp4" type="video/mp4" />
+  </video>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title" style="font-size: clamp(3rem, 6.5vw, 5.2rem); white-space: nowrap;">
+        HUNGER
+      </h1>
+
+      <p class="hero-subtitle" style="font-size: clamp(1rem, 1.6vw, 1.35rem); white-space: nowrap; max-width: 100%;">
+        Browse through free and premium HUNGER products
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">Browse products</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <img src="assets/images/icons/arrow_down.png" alt="Scroll down" class="scroll-arrow" />
+      <div class="scroll-text">Scroll</div>
+    </div>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="section-header">
+      <h2 class="section-title">Products</h2>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <div id="video-modal" class="video-modal">
+    <div class="video-container">
+      <video id="modal-video" playsinline></video>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Made for trolling salty players hackusating.</p>
+  </footer>
+
+  <script>
+    window.WEEEDLEY_GAME = "hunger";
+  </script>
+  <script src="assets/js/games.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>

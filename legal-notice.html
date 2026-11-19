@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Notice — weeedleyhacks</title>
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+
+  <style>
+    html, body { background-color: #070707; }
+
+    body.legal-page .legal-main{
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: .95rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,.82);
+    }
+    body.legal-page .legal-main h1{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 0 0 1.5rem;
+    }
+    body.legal-page .legal-main h2{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      margin: 2rem 0 .5rem;
+    }
+    body.legal-page .legal-main p,
+    body.legal-page .legal-main ul{ margin: 0 0 1rem; }
+    body.legal-page .legal-main ul{ padding-left: 1.2rem; }
+    body.legal-page .legal-main a{ color: #fff; }
+    body.legal-page .legal-main .legal-small{ font-size: .85rem; color: rgba(255,255,255,.55); }
+  </style>
+
+  <link rel="icon" href="assets/images/icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="legal-page">
+
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <img src="assets/images/icons/weeedley_logo1.png" alt="" class="nav-logo" />
+        <a href="index.html" class="logo">weeedleyhacks.com</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal-main">
+    <h1>Legal Notice</h1>
+
+    <h2>Information pursuant to § 18(1) of the German Interstate Media Treaty (MStV)</h2>
+    <p class="legal-contact" data-c="WyJEYW5pZWwgRnJpZWQiLCAiYy9vIEF1dG9yZW5nbMO8Y2sgIzQ3MjkzIiwgIkFsYmVydC1FaW5zdGVpbi1TdHJhw59lIDQ3IiwgIjAyOTc3IEhveWVyc3dlcmRhIiwgIkdlcm1hbnkiXQ=="></p>
+    <p>Contact by post to the address above.</p>
+
+    <h2>About this website</h2>
+    <p>
+      This website is a private, non-commercial fun and satire project. Nothing is sold here:
+      no cheats, no software, no downloads and no payments. All products, prices, discounts, sales and
+      reviews shown on this website are fictional and part of the joke.
+    </p>
+
+    <h2>Trademarks</h2>
+    <p>
+      All game titles, logos, images and other trademarks mentioned or shown on this website are the property
+      of their respective owners. This website is not affiliated with, endorsed by or sponsored by any of them.
+    </p>
+
+    <h2>External links</h2>
+    <p>
+      This website contains links to external websites. I have no influence on their content; the respective
+      provider is responsible for it. No illegal content was apparent at the time of linking. If I become aware
+      of any legal violations, I will remove such links without delay.
+    </p>
+
+    <h2>Applicable law</h2>
+    <p>
+      This website is operated from Germany. This legal notice is provided in accordance with German law.
+    </p>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script>
+    // Name und Anschrift stehen nicht im Klartext im Quellcode (Schutz vor Suchmaschinen und Scrapern)
+    document.querySelectorAll('.legal-contact').forEach(function (el) {
+      try {
+        var bytes = Uint8Array.from(atob(el.dataset.c), function (ch) { return ch.charCodeAt(0); });
+        JSON.parse(new TextDecoder().decode(bytes)).forEach(function (line, i) {
+          if (i) el.appendChild(document.createElement('br'));
+          el.appendChild(document.createTextNode(line));
+        });
+      } catch (e) {}
+    });
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
